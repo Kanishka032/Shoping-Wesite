@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+header {
+    background-color:blue;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.cart {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.filters {
+    flex: 1;
+    padding-right: 1em;
+    border-right: 1px solid #ddd;
+}
+
+.filters h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-list {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: calc(33.33% - 20px);
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff9900;
+}
+
+.add-to-cart {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #ffcc66;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</style>
+</head>
+<body>
+    <header>
+        <h1>Clothes Store</h1>
+        <nav>
+            <ul>
+                <li><a href="clickart.html">Home</a></li>
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kid.html">Kids</a></li>
+                <li><a href="res2.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#">Cart (0)</a>
+        </div>
+    </header>
+
+    <main>
+        <aside class="filters">
+            <h2>Filters</h2>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+                <option value="kids">Kids</option>
+            </select>
+        </aside>
+
+        <section class="product-list">
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\men1.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\women.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.34.20.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.33.38.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+ <div class="product">
+                <img src="C:\Users\Personal\Downloads\\men1.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\women.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.34.20.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.33.38.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+ <div class="product">
+                <img src="C:\Users\Personal\Downloads\\men1.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\women.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.34.20.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>De
+ <div class="product">
+                <img src="C:\Users\Personal\Downloads\\men1.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\women.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.34.20.jpg"width="400" height="200 alt="Men">
+                <h3>MEN</h3>
+                <p>Description of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.33.38.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>scription of Product 1.</p>
+                <p class="price">4000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="C:\Users\Personal\Downloads\\WhatsApp Image 2023-09-22 at 12.33.38.jpg"width="400" height="200 alt="Women">
+                <h3>WOMEN</h3>
+                <p>Description of Product 2.</p>
+                <p class="price">3000</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <!-- Add more product entries as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at kanishkag03.com</p>
+    </footer>
+</body>
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    var product = this.parentNode;
+                    var productName = product.querySelector("h3").innerText; // Corrected h2 to h3
+                    var productPrice = product.querySelector(".price").innerText;
+
+                    var item = {
+                        name: productName,
+                        price: productPrice
+                    };
+
+                    alert('Item added to cart: ' + item.name + ' - ' + item.price);
+                });
+            });
+        });
+    </script>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bed Sheets Store</title>
+  <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.product {
+    border: 1px solid Black;
+    padding: 1em;
+    text-align: center;
+    background-color: Pink;
+}
+
+.price {
+    font-weight: bold;
+    color: Red;
+}
+
+.buy-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+
+.buy-button:hover {
+    background-color: Red;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bed Sheets Store</h1>
+    </header>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="C:\Users\Personal\Downloads\\bedsheet1.jpg" width="400" height="200" alt="Bed Sheet 1">
+            <h2>Soft Cotton Bed Sheet</h2>
+            <p>High-quality cotton bed sheet with a soft feel.</p>
+            <p class="price">400</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Personal\Downloads\\bedsheet2.jpg"  width="400" height="200" alt="Bed Sheet 2">
+            <h2>Luxury Silk Bed Sheet</h2>
+            <p>Premium silk bed sheet for a luxurious sleep experience.</p>
+            <p class="price">800</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+  <div class="product">
+            <img src="C:\Users\Personal\Downloads\\bedsheet3.jpg"  width="400" height="200" alt="Bed Sheet 3">
+            <h2>Silk Bed Sheet</h2>
+            <p>For better  sleep experience.</p>
+            <p class="price">900</p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>Contact us at kanishka@gmail.com</p>
+    </footer>
+</body>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            var addToCartButtons = document.querySelectorAll(".buy-button");
+
+          
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    
+                    var product = this.parentNode;
+                    var productName = product.querySelector("h2").innerText;
+                    var productPrice = product.querySelector(".price").innerText;
+
+                    
+                    var item = {
+                        name: productName,
+                        price: productPrice
+                    };
+
+                    alert('Item added to cart: ' + item.name + ' - ' + item.price);
+                });
+            });
+        });
+    </script>
+</html>

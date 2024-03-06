@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+ background-image: url('C:/Users/Personal/Downloads/WhatsApp Image 2023-09-22 at 12.30.00.jpg'); 
+  background-size: cover; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+color: black;
+}
+
+header { background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+header p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: black;
+}
+
+main {
+    padding: 1em;
+}
+
+.feature h2,
+.specifications h2,
+.reviews h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  color: black;
+}
+
+.review h3 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phone Info</title>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Samsung</h1>
+        <p>Discover the features, specifications, and reviews of our amazing phone.</p>
+    </header>
+
+    <main>
+        <section class="feature">
+            <h2>Features</h2>
+            <ul>
+                <li>Super AMOLED display</li>
+                <li>Dual-camera system</li>
+                <li>Long-lasting battery</li>
+                <li>Fingerprint sensor</li>
+            </ul>
+        </section>
+
+        <section class="specifications">
+            <h2>Specifications</h2>
+            <table>
+                <tr>
+                    <td>Display</td>
+                    <td>5.8 inches</td>
+                </tr>
+                <tr>
+                    <td>Camera</td>
+                    <td>12 MP + 8 MP</td>
+                </tr>
+                <tr>
+                    <td>Battery</td>
+                    <td>4000 mAh</td>
+                </tr>
+                <tr>
+                    <td>Processor</td>
+                    <td>Octa-core</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <h3>Great Phone!</h3>
+                <p>This phone exceeded my expectations. The camera quality is fantastic, and the battery life is impressive.</p>
+                <p><strong>Rating: 5/5</strong></p>
+            </div>
+
+            <div class="review">
+                <h3>Impressive Performance</h3>
+                <p>The processor handles multitasking effortlessly. The design is sleek and modern.</p>
+                <p><strong>Rating: 4.5/5</strong></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at kanishkag203@.com</p>
+    </footer>
+</body>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            var addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+          
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    
+                    var product = this.parentNode;
+                    var productName = product.querySelector("h2").innerText;
+                    var productPrice = product.querySelector(".price").innerText;
+
+                    
+                    var item = {
+                        name: productName,
+                        price: productPrice
+                    };
+
+                    alert('Item added to cart: ' + item.name + ' - ' + item.price);
+                });
+            });
+        });
+    </script>
+</html>

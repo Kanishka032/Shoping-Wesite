@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.price {
+    font-weight: bold;
+    color: #00a000;
+}
+
+.add-to-cart {
+    background-color: #00a000;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #00c000;
+}
+
+    <title>My Grocery Store</title>
+    
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Electronics Store</h1>
+        <nav>
+            <ul>
+                <li><a href="clickart.html">Home</a></li>
+               
+                <li><a href="res2.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <div class="product">
+            <img src="C:\Users\Personal\Downloads\WhatsApp Image 2023-08-18 at 11.34.19.jpg" width="400" height="200" alt="Product 1">
+            <h2>Mobile Phone</h2>
+            <p>Description of Product 1.</p>
+            <p class="price">12,000 rs</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Personal\Downloads\\laptop1.jpg" width="400" height="200" alt="Product 2">
+            <h2>Laptop</h2>
+            <p>Description of Product 2.</p>
+            <p class="price">50,000</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+      <div class="product">
+            <img src="C:\Users\Personal\Downloads\WhatsApp Image 2023-08-18 at 11.34.19.jpg" width="400" height="200" alt="Product 1">
+            <h2>Mobile Phone</h2>
+            <p>Description of Product 1.</p>
+            <p class="price">15,000 rs</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Add more product entries as needed -->
+    </section>
+
+    <footer>
+        <p>Contact us at kanishka@gmail.com</p>
+    </footer>
+</body>
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener("click", function() {
+                    var product = this.parentNode;
+                    var productName = product.querySelector("h2").innerText; // Changed h3 to h2
+                    var productPrice = product.querySelector(".price").innerText;
+
+                    var item = {
+                        name: productName,
+                        price: productPrice
+                    };
+
+                    alert('Item added to cart: ' + item.name + ' - ' + item.price);
+                });
+            });
+        });
+    </script>
+</html>
